@@ -1,13 +1,11 @@
-'''Write a program to check NAVHW_010 and then NAVHW_012. 
-First, check whether the triangle is valid or not. If valid, check whether it is equilateral, isosceles or scalene.
-'''
+'''Write a program to input three sides of a triangle and check if the triangle is valid. 
+Sum of 2 sides should be greater than the third side which means 
+a+b>c and a+c>b and side_3+b>a ⇒  Then triangle is possible.'''
+a = int(input("Enter the side of a triangle:  "))
+b = int(input("Enter the side of a triangle:  "))
+c = int(input("Enter the side of a triangle:  "))
 
-if (a+b>c and a+c>b and b+c>a):
-    if (a==b==c):
-        print("The tringle is Equalateral Tringle ")
-    elif (a==b or b==c or a==c):
-        print("This is an isoceles Tringle ")
-    else:
-        print("The Tringle is Scalene")
+if (a + b > c) and (a +c > b) and (b + c > a):
+    print("It is posible")
 else:
-    print('This triangle is not possible...')
+    print("not posible")

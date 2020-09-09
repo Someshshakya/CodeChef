@@ -1,15 +1,13 @@
-''': Write a program to input three angles of a triangle and check if that 
-triangle is possible to form? [hint: Sum of all the angles must be equal to 180 degrees]'''
+'''Write a program that takes a number n and checks if the number is an odd multiple of 3.
+	Example
+		n = 24
+			Not odd multiple of 3.
+		n = 21
+			Odd multiple of 3
+'''
 
-a = int(input("Enter the angle of the Triangle:  "))
-b = int(input("Enter the angle of the Triangle:  "))
-c = int(input("Enter the angle of the Triangle:  "))
-
-if a!=0 and b!=0 and c!=0:
-    if (a+b+c == 180):
-        print("The triangle is possible to from ")
-    else:
-        print("NO it is not possible to form !")
+n = int(input("Enter your number:   -  "))  
+if n%3==0 and n%2!=0:
+    print("This is the odd multiple of 3   ",n)
 else:
-    print("The tringle is not able is form ! ")
-
+    print("This is not the odd multiple of 3 ",n)

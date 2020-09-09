@@ -1,13 +1,17 @@
-'''Write a program to input three angles of a triangle and check 
-which type of triangle based on the angles - right, obtuse, acute.'''
+''' Write a program to input three sides of a triangle 
+and check if a triangle is equilateral, isosceles or scalene.'''
 
-a = int(input("Enter the angle of the Triangle:  "))
-b = int(input("Enter the angle of the Triangle:  "))
-c = int(input("Enter the angle of the Triangle:  "))
+a = int(input("Enter the side of the triangle :-  "))
+b = int(input("Enter the side of the triangle :-  "))
+c = int(input("Enter the side of the triangle :-  "))
 
-if (a == 90 or b==90 or c==90):
-    print('This is angle is right angled Triangle')
-elif (a < 90 and b<90 and c<90):
-    print("This is an Acute angled Triangle")
+if (a==b==c):
+    print("The tringle is Equalateral Tringle ")
 else:
-    print("This is an Obtuse angled Triangle")
+    if (a==b or b==c or a==c):
+        print("This is an isoceles Tringle ")
+    else:
+        print("The Tringle is Scalene")
+
+
+

@@ -1,16 +1,18 @@
-'''Write a program to check if the given number is divisible by 5, 11, both or none. 
-If it is divisible by 5 then print 5
-If it is divisible by 11 then print 11
-If it is divisible by 5 and 11 then print “Both”
-If it is not divisible by 5 and not divisible  11 then “none”
 '''
-n = int(input('Enter your number   :> '))
-if (n%5==0 and n%11==0):
-    print("Both")
-elif n%5==0:
-    print(n,"Divisible by 5")
-else:
-    if n%11==0:
-        print(n,"divisible by 11")
+Write a program to take a number as input from the user and print
+“Bingo” - If the number is even and >200
+“Ringo” - If the number is odd and <200
+“CodeChef” - for any other number 
+Note: You cannot use and/or operator
+'''
+n = int(input("Enter your number :   - "))
+if n%2==0:
+    if n>200:
+        print("Bingo")
     else:
-        print('None')
+        print("codeChef")
+else:
+    if n < 200:
+        print("Ringo")
+    else:
+        print("CodeChef")

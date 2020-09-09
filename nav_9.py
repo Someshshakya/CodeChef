@@ -1,16 +1,17 @@
-''' Write a program to input three sides of a triangle 
-and check if a triangle is equilateral, isosceles or scalene.'''
-
-a = int(input("Enter the side of the triangle :-  "))
-b = int(input("Enter the side of the triangle :-  "))
-c = int(input("Enter the side of the triangle :-  "))
-
-if (a+b>c and a+c>b and b+c>a):
-    if (a==b==c):
-        print("The tringle is Equalateral Tringle ")
-    elif (a==b or b==c or a==c):
-        print("This is an isoceles Tringle ")
-    else:
-        print("The Tringle is Scalene")
+'''Write a program to check if the given number is divisible by 5, 11, both or none. 
+If it is divisible by 5 then print 5
+If it is divisible by 11 then print 11
+If it is divisible by 5 and 11 then print “Both”
+If it is not divisible by 5 and not divisible  11 then “none”
+'''
+n = int(input('Enter your number   :> '))
+if (n%5==0 and n%11==0):
+    print("Both")
 else:
-    print('This triangle is not possible...')
+    if n%5==0:
+        print(n,"Divisible by 5")
+    else:
+        if n%11==0:
+            print(n,"divisible by 11")
+        else:
+            print('None')

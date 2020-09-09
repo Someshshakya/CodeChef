@@ -1,21 +1,14 @@
-# Write a code for finding the 2nd maximum number from 3 numbers given as input. (Without using AND / OR)
-
-num_1 = int(input("Enter your number  "))
-num_2 = int(input("Enter your number  "))
-num_3 = int(input("Enter your number  "))
-
-if num_1 < num_2:
-    if num_2 < num_3:
-        print(num_2,"this is the 2nd max ")
+# Write a programme for finding the maximum of 3 number.
+n1 = int(input("Enter your number "))
+n2 = int(input("Enter your number "))
+n3 = int(input("Enter your number "))
+if n1<n2:
+    if n2<n3:
+        print(n3,"This is the max")
     else:
-        print(num_3,"this is the 2nd max")
+        print(n2,"this is the max")
 else:
-    if num_1 > num_3:
-        if num_2 < num_3:
-            print(num_3,'this is the 2nd max')
-        else:
-            print(num_2,"this is the 2nd max")
+    if n1>n3:
+        print(n1,"this is the max")
     else:
-        print(num_1,'this is the 2nd max')
-
-        
+        print(n3,"this is the max")

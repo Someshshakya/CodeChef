@@ -1,9 +1,21 @@
-# Write a programme for swapping two numbers without using 3rd/temp variable. (Without using a,b = b,a)
-a = int(input(" Enter you 1st value a  - "))
-b = int(input("Enter your n2 value  b  - "))
-b = b+a
-a = b-a
-b = b-a
+# Write a code for finding the 2nd maximum number from 3 numbers given as input. (Without using AND / OR)
 
-print("After swapping a ",a)
-print("After swapping b ",b)
+num_1 = int(input("Enter your number  "))
+num_2 = int(input("Enter your number  "))
+num_3 = int(input("Enter your number  "))
+
+if num_1 < num_2:
+    if num_2 < num_3:
+        print(num_2,"this is the 2nd max ")
+    else:
+        print(num_3,"this is the 2nd max")
+else:
+    if num_1 > num_3:
+        if num_2 < num_3:
+            print(num_3,'this is the 2nd max')
+        else:
+            print(num_2,"this is the 2nd max")
+    else:
+        print(num_1,'this is the 2nd max')
+
+        

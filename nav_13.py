@@ -1,18 +1,14 @@
-'''Write the program to check NAVHW_014 then print NAVHW_015.
+'''Write a program to check NAVHW_010 and then NAVHW_012. 
+First, check whether the triangle is valid or not. If valid, check whether it is equilateral, isosceles or scalene.
 '''
-a = int(input("Enter the angle of the Triangle:  "))
-b = int(input("Enter the angle of the Triangle:  "))
-c = int(input("Enter the angle of the Triangle:  "))
 
-if a!=0 and b!=0 and c!=0:
-    if (a+b+c == 180): 
-        if (a == 90 or b==90 or c==90):
-            print('This is angle is right angled Triangle')
-        elif (a < 90 and b<90 and c<90):
-            print("This is an Acute angled Triangle")
-        else:
-            print("This is an Obtuse angled Triangle")
+if (a+b>c and a+c>b and b+c>a):
+    if (a==b==c):
+        print("The tringle is Equalateral Tringle ")
     else:
-        print("NO it is not possible to form !")
+        if (a==b or b==c or a==c):
+            print("This is an isoceles Tringle ")
+    else:
+        print("The Tringle is Scalene")
 else:
-    print("The tringle is not able is form ! ")
+    print('This triangle is not possible...')
