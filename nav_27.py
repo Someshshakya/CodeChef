@@ -17,10 +17,11 @@ Odd
 Odd
 Odd
 Even'''
-num = int(input("Enter the number to take n as input number:-   "))
-for i in range(0,num+1):
-    n = int(input("Enter to check odd or even:-     "))
+num = int(input())
+while num>0:
+    n = int(input())
     if n%2==0:
         print("Even",n)
     else:
         print("Odd",n)
+    num-=1

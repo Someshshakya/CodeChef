@@ -7,20 +7,15 @@ lcm = 0
 if x!=0 and y!=0:
     if x > y:
         greater = x
-        while lcm == 0:
-            if greater%x==0 and greater%y==0:
-                lcm = greater
-                print(lcm," this is the HCF of ",y,x)
-                break
-            greater+=1
     else:
         greater = y
-        while lcm == 0:
-            if greater%x==0 and greater%y==0:
-                lcm = greater
-                print(lcm," this is the HCF of ",y,x)
-                break
-            greater+=1
+    while lcm == 0:
+        if greater%x==0 and greater%y==0:
+            lcm = greater
+            print(lcm," this is the HCF of ",y,x)
+            break
+        greater+=1
+   
 else:
     if x>y:
         print(x,"This is the lcm")
