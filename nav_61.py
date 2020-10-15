@@ -16,18 +16,18 @@ for i in range (2**N):
 for i in range (N**(2*2)):
     counter += 1
     
-# ~O(n^2) O of n to the power of 2
+# ~O(n^4) O of n to the power of 4
 ##
 for i in range (N**(2**0.5)):
     counter += 5;
 
-    # ~O(n^2) O of n to the power of 2
+    # ~O(n^(root of 2)) O of n to the power of sqrt root of 2
 
     
 ##
 for i in range (N, N**2):
     print(i)
-     # ~O(n^2-n) O of n to the power of 2 and N is subtracted
+     # ~O(n^2) O of n to the power of 2
     
 ##
 for i in range (1, N**3):
@@ -53,7 +53,7 @@ for i in range (N):
     for j in range(2**N):
         for k in range (N**2):
             print(i*j+k)
-         # ~O(2^n) O of 2 to the power of n
+         # ~O(n^4) O of 2 to the power of 4
 ##
 while N > 0: 
     N //=2

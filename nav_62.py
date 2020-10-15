@@ -6,26 +6,31 @@ Sample Input
 5 
 1 2 3 4 55
 4
-43 44 56 7643 44 56 76
+43 44 56 76
 
 Sample Output
 1 2 3 4 43 44 55 56 76
 '''
-n1 = int(input("Enter number limit:-  "))
+a = int(input("Enter number limit:-  "))
 n = [int(k) for k in input("Enter your number:  ").split()]
-m1 = int(input("Enter number limit:--  "))
-m = [int(k) for k in input("Enter your number:  ").split()]
-if (len(n)==n1 and len(m)==m1):
-    if n[0] > m[0]:
-        new_list = m+n
-        print(new_list,"hi")
-        for j in (new_list):
-            print(j,end=" ")
-    else:
-        new_list = n+m
-        print(new_list)
-        for i in (new_list):
-            print(i,end=" ")
-else:
-    print('Enter limited numbers only!')
-
+b = int(input("Enter number limit:--  "))
+x = [int(k) for k in input("Enter your number:  ").split()]
+merged_list = []
+if len(n)==a and len(x)==b:
+    while True:
+        if len(n)==0:
+            merged_list = merged_list + x
+            break
+        elif len(x)==0:
+            merged_list = merged_list+n
+            break
+        else:
+            if n[0] < x[0]:
+                merged_list.append(n[0])
+                n.pop(0)
+            else:
+                merged_list.append(x[0])
+                x.pop(0)
+    print(merged_list)
+else: 
+    print("Plz put the element within range only!")
